@@ -1,11 +1,42 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>GitHub Pages Example</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Twitter Clone</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Welcome to OptimusEntertainment　test Pages Site</h1>
-    <p>This is a simple HTML page hosted on GitHub Pages.</p>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Explore</a></li>
+                <li><a href="#">Notifications</a></li>
+                <li><a href="#">Messages</a></li>
+            </ul>
+        </nav>
+        <div class="profile">
+            <img src="profile.jpg" alt="Profile Image">
+            <span>John Doe</span>
+        </div>
+    </header>
+    <main>
+        <div class="tweet">
+            <img src="profile.jpg" alt="Profile Image">
+            <div class="tweet-content">
+                <span class="tweet-author">John Doe</span>
+                <p>This is a sample tweet.</p>
+            </div>
+        </div>
+        <!-- More tweets go here -->
+    </main>
+    <footer>
+        <div class="tweet-box">
+            <img src="profile.jpg" alt="Profile Image">
+            <textarea placeholder="What's happening?"></textarea>
+        </div>
+        <button class="tweet-button">Tweet</button>
+    </footer>
 </body>
 </html>
-
