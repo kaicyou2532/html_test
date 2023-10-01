@@ -3,40 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Twitter Clone</title>
+    <title>Discord Clone</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Explore</a></li>
-                <li><a href="#">Notifications</a></li>
-                <li><a href="#">Messages</a></li>
-            </ul>
-        </nav>
-        <div class="profile">
-            <img src="profile.jpg" alt="Profile Image">
+        <div class="logo">
+            <img src="discord-logo.png" alt="Discord Logo">
+            <span>Discord</span>
+        </div>
+        <div class="user">
+            <img src="user-avatar.png" alt="User Avatar">
             <span>John Doe</span>
         </div>
     </header>
     <main>
-        <div class="tweet">
-            <img src="profile.jpg" alt="Profile Image">
-            <div class="tweet-content">
-                <span class="tweet-author">John Doe</span>
-                <p>This is a sample tweet.</p>
+        <div class="channel-list">
+            <ul>
+                <li><a href="#">General</a></li>
+                <li><a href="#">Development</a></li>
+                <li><a href="#">Gaming</a></li>
+                <!-- More channels go here -->
+            </ul>
+        </div>
+        <div class="chat">
+            <div class="chat-header">
+                <span>#General</span>
+            </div>
+            <div class="message">
+                <img src="user-avatar.png" alt="User Avatar">
+                <div class="message-content">
+                    <span class="message-author">John Doe</span>
+                    <p>This is a sample message.</p>
+                </div>
+            </div>
+            <!-- More messages go here -->
+            <div class="message-input">
+                <input type="text" placeholder="Type your message...">
+                <button>Send</button>
             </div>
         </div>
-        <!-- More tweets go here -->
     </main>
-    <footer>
-        <div class="tweet-box">
-            <img src="profile.jpg" alt="Profile Image">
-            <textarea placeholder="What's happening?"></textarea>
-        </div>
-        <button class="tweet-button">Tweet</button>
-    </footer>
 </body>
 </html>
