@@ -1,1 +1,68 @@
+/* Reset some default styles for better consistency */
+body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Define styles for the chat container */
+.chat-container {
+    background-color: gray; /* Background color for the chat container */
+    color: white; /* Text color */
+    padding: 20px;
+}
+
+/* Style individual chat messages */
+.chat-message {
+    margin-bottom: 10px;
+}
+
+/* Style user information section in chat messages */
+.user-info {
+    display: flex;
+    align-items: center;
+}
+
+.username {
+    font-weight: bold;
+}
+
+.divider {
+    width: 2px;
+    height: 20px;
+    background-color: lightblue; /* Divider line color */
+    margin: 0 10px; /* Adjust the margin as needed */
+}
+
+.timestamp {
+    font-size: 12px;
+}
+
+/* Style message content */
+.message-content {
+    margin-top: 5px;
+}
+
+/* Style the input section */
+.input-container {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.username-input,
+.message-input {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+.submit-button {
+    background-color: blue; /* Button background color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
 
