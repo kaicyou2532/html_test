@@ -1,1 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="board.css">
+    <title>掲示板</title>
+</head>
+<body>
+    <div class="chat-container">
+        <div class="chat-message">
+            <div class="user-info">
+                <span class="username">ユーザー名1</span>
+                <span class="divider"></span>
+                <span class="timestamp">12:30</span>
+            </div>
+            <p class="message-content">投稿内容1</p>
+        </div>
 
+        <div class="chat-message">
+            <div class="user-info">
+                <span class="username">ユーザー名2</span>
+                <span class="divider"></span>
+                <span class="timestamp">12:45</span>
+            </div>
+            <p class="message-content">投稿内容2</p>
+        </div>
+
+        <!-- 他のチャットメッセージを追加 -->
+    </div>
+
+    <div class="input-container">
+        <input type="text" class="username-input" placeholder="ユーザー名">
+        <input type="text" class="message-input" placeholder="投稿内容">
+        <button class="submit-button">投稿</button>
+    </div>
+</body>
+</html>
+<form action="save_message.php" method="post">
+    <input type="text" class="username-input" name="username" placeholder="ユーザー名">
+    <input type="text" class="message-input" name="message" placeholder="投稿内容">
+    <button type="submit" class="submit-button">投稿</button>
+</form>
