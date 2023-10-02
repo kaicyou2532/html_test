@@ -67,7 +67,7 @@ body, h1, h2, p {
 /* Style individual news tiles */
 .news-tile {
     width: 300px; /* Adjust the width as needed */
-    background-color: #f0f0f0; /* Background color for news tiles */
+    background-color: #202021; /* Background color for news tiles */
     color: white; /* Text color */
     padding: 20px;
     border-radius: 10px; /* Rounded corners for tiles */
