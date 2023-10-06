@@ -3,111 +3,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Header</title>
+    <title>OptimusInteractive</title>
     <style>
-        /* ヘッダー全体のスタイル */
-        header {
-            background-color: black;
-            color: white;
-            display: flex;
-            align-items: center;
-            padding: 10px 20px;
-        }
-
-        /* アイコンのスタイル */
-        .icon {
-            font-size: 24px;
-            margin-right: 10px;
-        }
-
-        /* メニューのスタイル */
-        .menu {
-            list-style: none;
+        /* ページ全体のスタイル */
+        body {
+            font-family: Arial, sans-serif; /* フォント */
+            margin: 0;
             padding: 0;
-            display: flex;
+            background-color: #f0f0f0; /* 背景色 */
         }
 
-        .menu li {
-            margin-right: 20px;
+        /* ヘッダーのスタイル */
+        header {
+            background-color: #000; /* ヘッダーの背景色 */
+            color: #fff; /* ヘッダーテキストの色 */
+            text-align: center;
+            padding: 20px 0;
         }
 
-        /* メニュー項目のスタイル */
-        .menu-item {
+        /* ナビゲーションメニューのスタイル */
+        nav {
+            background-color: #222; /* メニューの背景色 */
+            color: #fff; /* メニューテキストの色 */
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        nav a {
             text-decoration: none;
-            color: white;
-            font-weight: bold;
+            color: #fff;
+            margin: 0 20px; /* メニューアイテム間の余白 */
+        }
+
+        /* コンテンツのスタイル */
+        .content {
+            padding: 20px;
+        }
+
+        /* フッターのスタイル */
+        footer {
+            background-color: #000;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
         }
     </style>
 </head>
 <body>
     <header>
-        <!-- アイコン -->
-        <div class="icon">🏠</div>
-
-        <!-- メニュー -->
-        <ul class="menu">
-            <li><a href="#" class="menu-item">Home</a></li>
-            <li><a href="#" class="menu-item">Services</a></li>
-            <li><a href="#" class="menu-item">Member</a></li>
-            <li><a href="#" class="menu-item">About</a></li>
-            <li><a href="#" class="menu-item">SNS</a></li>
-        </ul>
+        <h1>Welcome to OptimusInteractive</h1>
     </header>
-    <main>
-        <section class="hero">
-            <h1>Welcome to OptimusInteractive</h1>
-            <p>このサイトはOptimusInteractiveの技術実証用ページです。</p>
-        </section>
-        <section class="News">
-            <h2>News</h2>
-    　　    <div class="news-container">
-        <div class="news-tile">
-            <div class="news-header">
-                <h2>技術実証用のサイトを開設しました</h2>
-            </div>
-            <div class="news-content">
-                <p>ここに新着情報の詳細が表示されます。   <a href="news1">詳細</a>
-                </p>
-            </div>
-        </div>
 
-        <div class="news-tile">
-            <div class="news-header">
-                <h2>オプ鯖（マイクラ鯖
-                ）のホームページが公開されました。</h2>
-            </div>
-            <div class="news-content">
-                <p>オプ鯖（マイクラ鯖
-                ）のホームページが公開されました。<a href="https://ucbright2656.github.io/UCB_home/">ホームページ</a></p>
-            </div>
-        </div>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Services</a>
+        <a href="#">About Us</a>
+        <a href="#">Contact</a>
+    </nav>
 
-        <!-- 他の新着情報タイルを追加 -->
+    <div class="content">
+        <h2>About OptimusInteractive/h2>
+        <p>.</p>
     </div>
-        </section>
-        <section class="test1">
-            <h2>フォームリンク集</h2> <p>
-        <a href="https://forms.gle/LS8pWyZwib3U1SPn7">マイクラサーバー「オプ鯖」運営募集フォーム</a>　<br>
-        <a href="https://forms.gle/6GgkGWJVC5XmdNqt6">マイクラサーバー「オプ鯖」寄付受付フォーム</a>  <br>
-        <a href="https://forms.gle/YU9HZ4GN3y9sUhMaA">マイクラサーバー「オプ鯖」土地申請フォーム</a>  <br> </p>
-        </section>
-        <section class="test2">
-            <h2>APP</h2>
-        <p>    
-        <a href="https://kaicyou2532.github.io/html_test/App/board.html">掲示板（お試し）</a> <br>
-        <a href="https://kaicyou2532.github.io/html_test/App/tetorisu.html">テトリス　</a> <br>  
-        </p>
-        </section>
-        <section class="test3">
-            <h2>お問い合わせ</h2>
-        <a href="test.html">Go to Form Page</a>
-        </section>
-    <title>Index Page</title>
-    </main>
+
     <footer>
-        <p>&copy; 2023 OptimusInteractive 技術本部ソフトウェア開発部</p>
+        &copy; 2023 OptimusInteractive
     </footer>
-    
 </body>
 </html>
-
