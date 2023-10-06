@@ -3,23 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>OptimusInteractive</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Header</title>
+    <style>
+        /* ヘッダー全体のスタイル */
+        header {
+            background-color: black;
+            color: white;
+            display: flex;
+            align-items: center;
+            padding: 10px 20px;
+        }
+
+        /* アイコンのスタイル */
+        .icon {
+            font-size: 24px;
+            margin-right: 10px;
+        }
+
+        /* メニューのスタイル */
+        .menu {
+            list-style: none;
+            padding: 0;
+            display: flex;
+        }
+
+        .menu li {
+            margin-right: 20px;
+        }
+
+        /* メニュー項目のスタイル */
+        .menu-item {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+    </style>
 </head>
 <body>
     <header>
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">member</a></li>
-                <li><a href="https://discord.gg/zTrrBx8SCR">OurDiscord</a></li>
-                <li><a href="https://twitter.com/optimus_servers">SNS</a></li>
-            </ul>
-        </nav>
-        <div class="logo">
-            <img src="OptimusEntertainment-logo.png" alt="OptimusEntertainment Logo">
-        </div>
+        <!-- アイコン -->
+        <div class="icon">🏠</div>
+
+        <!-- メニュー -->
+        <ul class="menu">
+            <li><a href="#" class="menu-item">Home</a></li>
+            <li><a href="#" class="menu-item">Services</a></li>
+            <li><a href="#" class="menu-item">Member</a></li>
+            <li><a href="#" class="menu-item">About</a></li>
+            <li><a href="#" class="menu-item">SNS</a></li>
+        </ul>
     </header>
     <main>
         <section class="hero">
