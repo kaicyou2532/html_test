@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>タイルゲーム</title>
+    <style>
+        .tile {
+            width: 100px;
+            height: 100px;
+            background-color: #eee;
+            text-align: center;
+            line-height: 100px;
+            font-size: 20px;
+            margin: 5px;
+            cursor: pointer;
+            user-select: none;
+        }
+    </style>
+</head>
+<body>
+    <div id="game-container">
+        <!-- タイルはここに生成されます -->
+    </div>
+    <button id="start-button">ゲームスタート</button>
+
+    <script>
+        const tileCount = 29;
+        const gameContainer = document.getElementById("game-container");
+        const startButton = document.getElementById("start-button");
+
+        // タイルをシャッフルする関数
+        function shuffleTiles() {
+            const tiles = Array.from(gameContainer.children);
+            tiles.forEach(tile => {
+                const randomOrder = Math.floor(Math.random() * tileCount);
+                tile.style.order = randomOrder;
+            });
+        }
+
+        // ゲームスタートボタンをクリックしたときの処理
+        startButton.addEventListener("click", () => {
+            shuffleTiles();
+        });
+
+        // タイルが正しい順序に並んでいるかをチェックする関数
+        function checkOrder() {
+            const tiles = Array.from(gameContainer.children);
+            return tiles.every((tile, index) => parseInt(tile.textContent) === index + 1);
+        }
+
+        // タイルをクリックしたときの処理
+        gameContainer.addEventListener("click", (e) => {
+            const tile = e.target;
+            if (tile.classList.contains("tile")) {
+                tile.style.order = -1; // クリックしたタイルを一番手前にする
+                if (checkOrder()) {
+                    alert("おめでとうございます！ゲームクリアしました！");
+                }
+            }
+        });
+
+        // タイルを生成して表示
+        for (let i = 1; i <= tileCount; i++) {
+            const tile = document.createElement("div");
+            tile.classList.add("tile");
+            tile.textContent = i;
+            gameContainer.appendChild(tile);
+        }
+    </script>
+</body>
+</html>
