@@ -22,12 +22,13 @@
     <div id="game-container">
         <!-- タイルはここに生成されます -->
     </div>
-    <button id="start-button">ゲームスタート</button>
+    <p>ポイント: <span id="score">0</span></p>
 
     <script>
         const tileCount = 29;
         const gameContainer = document.getElementById("game-container");
-        const startButton = document.getElementById("start-button");
+        const scoreDisplay = document.getElementById("score");
+        let score = 0;
 
         // タイルをシャッフルする関数
         function shuffleTiles() {
@@ -38,24 +39,21 @@
             });
         }
 
-        // ゲームスタートボタンをクリックしたときの処理
-        startButton.addEventListener("click", () => {
-            shuffleTiles();
-        });
-
-        // タイルが正しい順序に並んでいるかをチェックする関数
-        function checkOrder() {
-            const tiles = Array.from(gameContainer.children);
-            return tiles.every((tile, index) => parseInt(tile.textContent) === index + 1);
-        }
+        // ゲームスタート時にタイルをシャッフル
+        shuffleTiles();
 
         // タイルをクリックしたときの処理
         gameContainer.addEventListener("click", (e) => {
             const tile = e.target;
             if (tile.classList.contains("tile")) {
                 tile.style.order = -1; // クリックしたタイルを一番手前にする
-                if (checkOrder()) {
+                score++;
+                scoreDisplay.textContent = score;
+                if (score === tileCount) {
                     alert("おめでとうございます！ゲームクリアしました！");
+                    score = 0;
+                    scoreDisplay.textContent = score;
+                    shuffleTiles();
                 }
             }
         });
@@ -64,9 +62,10 @@
         for (let i = 1; i <= tileCount; i++) {
             const tile = document.createElement("div");
             tile.classList.add("tile");
-            tile.textContent = i;
+            tile.textContent = ""; // 初期状態では空欄
             gameContainer.appendChild(tile);
         }
     </script>
 </body>
 </html>
+
