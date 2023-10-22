@@ -1,0 +1,87 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE8">
+        <link rel="stylesheet" href="system/css/main.css" media="screen">
+        <script src="system/js/lib/jquery-1.5.min_min.js"></script>
+        <script src="system/js/lib/jquery.color_min.js"></script>
+        <script src="system/js/lib/jquery.history_min.js"></script>    
+        <script src="system/js/loadReportTopic_min.js"></script>
+        <script src="system/js/loadCategory_min.js"></script>
+        <script src="system/js/lib/twitter_min.js"></script>
+        <script src="system/js/pageControl_min.js"></script>
+        
+        <link rel="shortcut icon" href="system/image/favicon.ico" type="image/vnd.microsoft.icon">
+        <link rel="icon" href="system/image/favicon.ico" type="image/vnd.microsoft.icon">
+            
+        <meta name="description" content="大空を舞台にした４年間だけのストーリー。- Soaring Team AOYAMA　青山学院大学体育会航空部">
+        <meta name="keywords" content="航空部,青山,グライダー,STA,滑空機,体育会,部活">
+            
+        <title>Soaring Team AOYAMA</title>
+        <script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-8886470-2']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+    </head>
+    <body>
+        <div id="jsCheck">
+            <div id="loader" style="display: none"><img src="system/image/ajax-loader.gif" width="16" height="11" alt="ajax-loader"/></div>
+            
+            <div id="background"></div>
+            <div id="blackFade" style="display: none"></div>
+            <div id="dataView" style="display: none"></div>
+            <div id="divData" style="display: none"><div id="cancelDataView" onclick="cancelDataView(),history.back();">×閉じる</div><div id="dataViewMain"></div></div>
+            <div id="realBody">
+                
+                <div id="index" style="display: none">
+                    <div id="header"></div>
+                    <div id="logo"></div>
+                    <div id="topMessage"></div>                  
+                    <div id="menuArea">
+                        <div id="divAboutUs"><a href="#aboutus"><div id="aboutUs" class="menuBox"><div class="margin">ABOUT US</div></div></a><div id="subAboutUs" class="subMenu" style="display: none"></div></div>
+                        <div id="divGlider"><a href="#glider"><div id="glider" class="menuBox"><div class="margin">GLIDER</div></div></a><div id="subGlider" class="subMenu" style="display: none"></div></div>
+                        <div id="divReport"><a href="#report"><div id="report" class="menuBox"><div class="margin">REPORTS</div></div></a><div id="subReport" class="subMenu" style="display: none"></div></div>
+                        <div id="divTopic"><a href="#topic"><div id="topic" class="menuBox"><div class="margin">TOPICS</div></div></a><div id="subTopic" class="subMenu" style="display: none"></div></div>
+                        <div id="divOther"><a href="#other"><div id="other" class="menuBox"><div class="margin">OTHER</div></div></a><div id="subOther" class="subMenu" style="display: none"></div></div>
+                        <div id="divDocument"><a href="#document"><div id="document" class="menuBox"><div class="margin">DOCUMENTS</div></div></a><div id="subDocument" class="subMenu" style="display: none"></div></div>
+                    </div>
+                    <div id="latest_tweet"><span style="width: 100%;font-weight: bold;border-bottom-width: 1px;border-bottom-style: solid;border-bottom-color: #eee">HOT NEWS</span><div class="loading"></div></div>
+                    <div id="footer"></div>
+                </div>
+
+                    <div id="contents" style="display: none">
+                        <div id="centerContainer">
+                            
+                            <div id="contentsMenuArea">
+                                <a href="#"><div id="contentsLogo" class="contentsMenuBox"><img src="system/image/STA.jpg" width="100" height="100" alt="STA"/></div></a>
+                                <a href="#aboutus" alt="所属部員・所有機体"><div id="contentsAboutAs" class="contentsMenuBox"><div class="margin">ABOUT US</div></div></a>
+                                <a href="#glider" alt="グライダーについて"><div id="contentsGlider" class="contentsMenuBox"><div class="margin">GLIDER</div></div></a>
+                                <a href="#report" alt="活動報告（合宿大会等）"><div id="contentsReport" class="contentsMenuBox"><div class="margin">REPORTS</div></div></a>
+                                <a href="#topic" alt="活動報告（全般）"><div id="contenstTopic" class="contentsMenuBox"><div class="margin">TOPICS</div></div></a>
+                                <a href="#other" alt="他諸情報"><div id="contentsOther" class="contentsMenuBox"><div class="margin">OTHER</div></div></a>
+                                <a href="#document" alt="関係書類"><div id="contentsDocument" class="contentsMenuBox"><div class="margin">DOCUMENTS</div></div></a>
+                            </div>
+                            <div id="contentsMain">
+                                <div id="contentsMainLeft"></div>
+                                <div id="contentsMainRight"></div>
+                                <br clear="all" />
+                            </div>
+                            <div id="contentsFooter"></div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </body>
+</html>
