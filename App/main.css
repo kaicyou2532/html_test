@@ -1,0 +1,344 @@
+mg.bg {
+    /* Set rules to fill background */
+    min-height: 100%;
+    min-width: 1024px;
+    /* Set up proportionate scaling */
+    width: 100%;
+    height: auto;
+    /* Set up positioning */
+    position: fixed;
+    /* またはabsolute; */
+    top: 0;
+    left: 0;
+    -moz-background-size:cover;
+    background-size:cover;
+}
+@media screen and (max-width: 1024px){
+    img.bg {
+        left: 50%;
+        margin-left: -512px;
+    }
+}
+#background{
+    z-index: -99;
+    width: 100%;
+    height: 100%;
+    bottom: 0px;
+    right: 0px;
+    position: fixed;
+    background-position: bottom right;
+    background-image: url('../../top_image/back2.jpg');
+    -moz-background-size:cover;
+background-size:cover;
+}
+a{
+    text-decoration: none;
+}
+a img{
+    border: none;
+}
+li{
+    list-style-type: square;
+}
+div#realBody {
+    position: relative;
+}
+
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: HiraKakuPro-W3,メイリオ;
+}
+#blackFade{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    fllter:Alpha(opacity=70);
+    -moz-opacity:0.7;
+    opacity:0.70;
+    -ms-filter: "alpha(opacity=75)"; /* IE 8 */
+    -khtml-opacity: .75; /* Safari 1.x */
+}
+#dataView{
+    z-index: 999;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0px;
+    top: 0px;
+    background-image: url('../image/dataViewSTA.png');
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    background-color: #000;
+    fllter:Alpha(opacity=70);
+    -moz-opacity:0.7;
+    opacity:0.70;
+}
+#cancelDataView{
+    z-index: 1000;
+    position: fixed;
+    color: #fff;
+    top: 0px;
+    right: 0px;
+    width: 80px;
+    height: 80px;
+    cursor: pointer;
+}
+#dataViewMain{
+    z-index: 1000;
+    position: fixed;
+    width: 700px;
+    height: 100%;
+    top: 0px;
+    left: 50%;
+    margin-left: -350px;
+    background-color: #000;
+}
+#index{
+    position: absolute;
+}
+#logo{
+    position: fixed;
+    background-image: url('../image/STA.jpg');
+    width: 120px;
+    height: 120px;
+    top: 10px;
+    left: 10px;
+}
+#loader{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-left: 
+}
+#topMessage{
+    position: fixed;
+    right: 5px;
+    top: 5px;
+    width: 500px;
+    height: 300px;
+}
+#topTitleRight{
+    text-align: right;
+    font-family: Impact;
+}
+/*#topMenuBar{
+    position: fixed;
+    bottom: 30px;
+    right: 0px;
+    width: 600px;
+    height: 220px;
+}*/
+.margin{
+    margin-top: 42px;
+}
+.subMenu{
+    position: fixed;
+    bottom: 130px;
+    right: 0px;
+    height: auto;
+    width: 600px;
+    color: #555;
+    background-color: #fff;
+    fllter:Alpha(opacity=90);
+    -moz-opacity:0.9;
+    opacity:0.90;
+}
+#menuArea{
+    position: fixed;
+    bottom: 30px;
+    right: 0px;
+    width: 600px;
+    height: 100px;
+}
+.menuBox{
+    position: relative;
+    top: 0px;
+    height: 100px;
+    width: 100px;
+    float: left;
+    text-align: center;
+    color: #eee;
+    font-size: 12px;
+    vertical-align: middle;
+    background-color: #010;
+    fllter:Alpha(opacity=90);
+    -moz-opacity:0.9;
+    opacity:0.90;
+}
+.vertical{
+    position: relative;
+    top: 50%;
+    margin-top: -6px;
+}
+#latest_tweet{
+    position: fixed;
+    padding: 4px;
+    bottom: 30px;
+    width: 180px;
+    height: auto;
+    color: #eee;
+    font-size: 12px;
+    vertical-align: middle;
+    background-color: #010;
+    fllter:Alpha(opacity=90);
+    -moz-opacity:0.9;
+    opacity:0.90;
+}
+.loading{
+    z-index: 99999;
+    width: 50px;
+    height: 50px;
+    border-radius:5px;
+    background-color: #000;
+    fllter:Alpha(opacity=70);
+    -moz-opacity:0.7;
+    opacity:0.70;
+}
+#footer{
+    position: fixed;
+    bottom: 5px;
+    right: 0px;
+    width: 600px;
+    height: 25px;
+    background-color: #fff;
+    color: #030;
+    fllter:Alpha(opacity=90);
+    -moz-opacity:0.9;
+    opacity:0.90;
+}
+
+/*contents*/
+
+#centerContainer{
+    position: relative;
+    top:0px;
+    left: 50%;
+    margin-left: -390px;
+    width: 780px;
+    background-color: #eee;
+}
+#contentsMenuArea{
+    position: relative;
+    width: 100%;
+    height: 120px;
+}
+.contentsMenuBox{
+    position: relative;
+    top: 10px;
+    height: 100px;
+    width: 100px;
+    float: left;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    color: #eee;
+    font-size: 12px;
+    vertical-align: middle; 
+    background-color: #030;
+}
+#contentsMain{
+    position: relative;
+    width: 760px;
+    margin: 0px 10px;
+}
+#contentsMainLeft{
+    position: relative;
+    top: 0px;
+    width: 229px;
+    float: left;
+    border-right-width: 1px;
+    border-right-style: solid;
+    border-right-color: #aaa;
+    margin-bottom: 10px;
+    color: #555;
+}
+#contentsMainRight{
+    position: relative;
+    top: 0px;
+    width: 529px;
+    float: right;
+    border-left-width: 1px;
+    border-left-style: solid;
+    border-left-color: #aaa;
+    margin-bottom: 10px;
+    color: #555;
+}
+.readmore{
+    margin: 15px 0px;
+    cursor: pointer;
+}
+.contentsMark{
+    border-left-width: 10px;
+    border-left-style: solid;
+    border-left-color: #030;
+    font-size: 19px;
+    margin:10px 10px 10px 10px;
+}
+.dataCategory{
+    margin-right: 10px;
+    font-weight: bold;
+    color: #030;
+}
+.note{
+    font-size: 10px;
+    margin-left: 8px;
+}
+#contentsFooter{
+    color: #030;
+}
+
+.grade{
+    text-align: center;
+    font-size: 18px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #030;
+    margin: 15px 5px;
+}
+.aboutUsContainer{
+    margin: 5px 0px 15px 5px;
+}
+.personTitle{
+    position: relative;
+    height: 60px;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: #030;
+}
+.personName{
+    position: relative;
+    width: 50%;
+    float: left;
+}
+.nameBig{
+    font-size: 25px
+}
+.nameSmall{
+    font-size: 13px;
+}
+.personWork{
+    position: relative;
+    width: 50%;
+    float: right;
+    text-align: right;
+}
+.personImg{
+    position: relative;
+    width: 320px;
+    height: 240px;
+    float: left;
+}
+
+.personDetail1{
+    position: relative;
+    padding-top: 15px;
+
+    font-size: 12px;
+}
+.personDetail2{
+    font-size: 12px;
+}
